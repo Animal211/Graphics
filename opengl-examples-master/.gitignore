@@ -1,0 +1,28 @@
+# General Files
+CMakeCache.txt
+CMakeFiles
+Makefile
+cmake_install.cmake
+
+log.txt
+# log files created by ivs-test:
+ivs-test-left.txt
+ivs-test-right.txt
+
+/doxygen-docs
+
+
+# Visual Studio
+/bin/Debug/
+/lib/Debug/
+/samples/*.dir/
+/lib/kuhl.dir/
+/.vs
+/Win32
+*.sdf
+*.sln
+*.opensdf
+*.vcxproj*
+
+# Apple OS X debugging information
+*.dSYM

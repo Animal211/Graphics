@@ -1,0 +1,18 @@
+^C:\USERS\JAKE\DESKTOP\OPENGL-EXAMPLES-MASTER\CMAKEFILES\B18949DE7910CAD50AD286DFF84F1E86\SELFTESTS.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\JAKE\DESKTOP\OPENGL-EXAMPLES-MASTER\SELFTESTS\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Jake/Desktop/opengl-examples-master -BC:/Users/Jake/Desktop/opengl-examples-master --check-stamp-file C:/Users/Jake/Desktop/opengl-examples-master/selftests/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
